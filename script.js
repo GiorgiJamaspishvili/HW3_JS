@@ -5,6 +5,7 @@
 function sum(...n) {
     let sumValue = 0;
     for (let item of n) {
+        if (item > 0);
         sumValue += item;
     }
     return sumValue;
