@@ -39,6 +39,9 @@ let user = {
     isloggedin: true
 }
 
+// let result = `${user.firstname} ${user.lastname}`;
+// console.log(result);
+
 
 
 
@@ -69,3 +72,25 @@ array.forEach(function (i) {
         }
     }
 })
+
+
+
+// 7.
+let array2 = [1,2,3,4,5];
+array2.reverse();
+console.log(array2);
+
+
+// 8.
+function userAge(number) {
+    if (number < 18) {
+        return 'arasrulwlovani';
+    }else if (number => 18) {
+       
+        return 'srulwlovani';
+    } 
+        return 'error';
+}
+
+let result = userAge(20);
+console.log(result);
