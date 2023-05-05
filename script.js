@@ -32,15 +32,28 @@ console.log(resultSum2);
 
 
 // 3.
-let user = {
+let user4 = {
     firstname: 'giorgi',
     lastname: 'saakadze',
     age: 32,
     isloggedin: true
 }
 
-// let result = `${user.firstname} ${user.lastname}`;
-// console.log(result);
+let result4 = 
+  user4.isloggedin == true
+  ? "giorgi saakadze"
+  : user4.isloggedin == false
+  ? "paatas tavi"
+  : "error";
+
+  console.log(result4);
+
+// let result1 = `${user.firstname} ${user.lastname}`;
+// console.log(result1);
+
+
+
+// 4.
 
 
 
@@ -48,7 +61,19 @@ let user = {
 
 
 
+// 5.
+function test(number) {
+    if (number % 2 == 0) {
+        return 'luwi';
+    }else if (number % 2 == 1) {
+        
+        return 'kenti';
+    } 
+        return 'error';
+}
 
+let result3 = test(4);
+console.log(result3);
 
 
 
@@ -79,6 +104,7 @@ array.forEach(function (i) {
 let array2 = [1,2,3,4,5];
 array2.reverse();
 console.log(array2);
+
 
 
 // 8.
