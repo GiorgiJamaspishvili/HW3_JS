@@ -2,17 +2,28 @@
 
 // 1. 
 
-function sum(...n) {
-    let sumValue = 0;
-    for (let item of n) {
-        if (item > 0);
-        sumValue += item;
+function SummPositive( numbers ) {
+    let negatives = [];
+    let sum = 0;
+  
+    for(let i = 0; i < numbers.length; i++) {
+      if(numbers[i] < 0) {
+        negatives.push(numbers[i]);
+      }else{
+        sum += numbers[i];
+      }
     }
-    return sumValue;
-}
+  
+    console.log(negatives);
+  
+    return sum;
+  }
+  
+  let sum_result = SummPositive( [ 2, -9, 5, 11, -30, 100, -8, -11, -4, 5, -6, 8 ] );
+  
+  console.log(sum_result);
 
-let resultSum = sum(2, -9, 5, 11, -30, 100, -8, -11, -4, 5, -6, 8)
-console.log(resultSum);
+
 
 
 
