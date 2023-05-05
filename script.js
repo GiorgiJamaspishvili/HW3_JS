@@ -55,7 +55,22 @@ let result4 =
 
 
 // 4.
+function getMaxOfArray(numArray) {
+    return Math.max.apply(numArray);
+  }
 
+let resultFunction2 = getMaxOfArray();
+console.log(resultFunction2);
+
+
+
+Array.prototype.max = function() {
+    return Math.max.apply(null, this);
+  };
+  
+  Array.prototype.min = function() {
+    return Math.min.apply(null, this);
+  };
 
 
 
