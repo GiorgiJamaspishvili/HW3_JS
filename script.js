@@ -2,7 +2,7 @@
 
 // 1. 
 
-function SummPositive( numbers ) {
+function SummPositive(...numbers) {
     let negatives = [];
     let sum = 0;
   
@@ -19,9 +19,9 @@ function SummPositive( numbers ) {
     return sum;
   }
   
-  let sum_result = SummPositive( [ 2, -9, 5, 11, -30, 100, -8, -11, -4, 5, -6, 8 ] );
+  let sumResult = SummPositive(2, -9, 5, 11, -30, 100, -8, -11, -4, 5, -6, 8);
   
-  console.log(sum_result);
+  console.log(sumResult);
 
 
 
